@@ -1,6 +1,21 @@
+[package]
+name = "ansible-rust-lint"
+version = "25.5.0"
+edition = "2021"
+
+[[bin]]
+name = "ansible-rust-lint"
+path = "crates/ansible-lint/src/main.rs"
+
+[dependencies]
+ansible-lint-core = { path = "crates/ansible-lint-core" }
+anyhow = { workspace = true }
+clap = { workspace = true }
+owo-colors = { workspace = true }
+serde_json = { workspace = true }
+
 [workspace]
 members = [
-    "crates/ansible-lint",
     "crates/ansible-lint-core",
 ]
 resolver = "2"

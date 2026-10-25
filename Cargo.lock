@@ -12,17 +12,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "ansible-lint"
-version = "25.5.0"
-dependencies = [
- "ansible-lint-core",
- "anyhow",
- "clap",
- "owo-colors",
- "serde_json",
-]
-
-[[package]]
 name = "ansible-lint-core"
 version = "25.5.0"
 dependencies = [
@@ -41,6 +30,17 @@ dependencies = [
  "toml",
  "walkdir",
  "yaml-rust2",
+]
+
+[[package]]
+name = "ansible-rust-lint"
+version = "25.5.0"
+dependencies = [
+ "ansible-lint-core",
+ "anyhow",
+ "clap",
+ "owo-colors",
+ "serde_json",
 ]
 
 [[package]]
